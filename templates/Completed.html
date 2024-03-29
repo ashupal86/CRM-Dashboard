@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+{%block heading%}
+<link rel="stylesheet" href="{{url_for('static',filename='css/table.css')}}">
+
+<h1>Completed'S</h1>
+<a href="{{url_for('main')}}">HOME</a>
+
+
+{%endblock%}
+{% block content %}
+
+
+<div class='table-area'>
+<table>
+    <tr>
+        <th>S No.</th>
+        <th>E-mail</th>
+        <th>Name</th>  
+        <th>Phone</th>
+        <th>Domain</th>
+        <th>Joined</th>
+        <th>Completed</th>
+        <th>CERTIFICATE ID</th>
+    </tr>
+    <div class="table-data">
+   
+    {% for row in data %}
+    <tr>
+        {% for cell in row %}
+        <td>{{cell}}</td>
+        {% endfor %}
+        
+    </tr>   
+    {% endfor %} 
+    
+    </div>
+    
+    
+    
+</table>
+</div>
+
+{% endblock %}

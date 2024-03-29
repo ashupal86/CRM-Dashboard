@@ -1,0 +1,117 @@
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.link{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+.link a{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    background-color: #ccc;
+}
+
+.link a:hover{
+    
+    background-color: #000;
+    color: #fff;
+}
+
+.links form{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.links form input{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.links form input[type="submit"]{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    background-color: #ccc;
+}
+
+.links form input[type="submit"]:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* write css for input type month */
+.links form input[type="month"] {
+    
+    height: 20px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    background-color: #fff;
+}
+.links form input[type="month"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    background-color: #ccc;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: #000;
+  }
+
+.links form input[type="month"]::-webkit-calendar-picker-indicator:focus {
+    background-color: #000;
+    color: #fff;
+  }
+
+
+
+  /* write css for input type month */
+.links form input[type="month"]:focus {
+    border-color: #999;
+    box-shadow: 0 0 10px #999;
+  }
+
+.looger{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.LOGGER{
+ 
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    border: 1px dotted black;
+}

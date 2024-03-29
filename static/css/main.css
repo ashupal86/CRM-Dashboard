@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    overflow: hidden;
+   
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    
+
+
+}
+.content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 40%;
+    border: 1px solid white;
+    border-radius: 25px;
+    backdrop-filter: blur(2px);
+}
+.content form input{
+    
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-weight: bold;
+}
+.content form input:focus{
+    outline: none;
+    overflow-y: visible;
+    border: 1px solid rgb(85, 147, 255);
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-weight: bold;
+}
+.content form input::placeholder{
+    font-weight: bold;
+}
+.content form input:focus::placeholder{
+    color: white;
+}
+.content form input[type="submit"]{
+    background-color: rgb(85, 147, 255);
+    color: rgb(255, 255, 255);
+    width: 50%;
+    font-weight: bold;
+    font-size: large;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.content form input[type="submit"]:hover{
+    background-color: rgb(63, 134, 255);
+    color: rgb(0, 0, 0);
+    
+    width: 50%;
+    font-weight: bold;
+    font-size: large;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}   

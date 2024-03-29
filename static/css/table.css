@@ -1,0 +1,117 @@
+
+table{
+   
+    width: 100%;
+    height:10%;
+    
+    margin:0 auto;
+    
+    
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #505050;
+   
+}
+
+table thead tr{
+    position: relative;
+    height: 10px;
+    background-color: #009688;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+table tbody td{
+    text-align: center;
+}
+table tbody tr:nth-child(1){
+    background-color:#000000;
+    border-collapse: collapse;
+    color: #fff;
+    position: sticky;
+    top: 1px;
+    
+}
+table tbody tr:nth-child(1):hover{
+    background-color:#000000;
+    border-collapse: collapse;
+
+    color: #fff;
+}
+
+table tbody tr:nth-child(even){
+    background-color: #6d6d6d;
+}
+
+table tbody tr:hover{
+    
+    background-color: #939393;
+}
+
+
+
+
+
+table tbody tr td input[type="checkbox"]{
+    cursor: pointer;
+    width:40px;
+    height: 20px;
+    
+}
+.table-area{
+    width: 100%;
+    max-height:700px;
+
+
+    overflow-y: scroll;
+
+    border-radius: 5px;
+    background-color: rgb(49, 49, 49);
+}
+#SUBIT_BTN{
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+}
+#myInput{
+   position: fixed;
+   right: 1%;
+   top: 3%;
+   border-radius: 25px;
+   padding: 5px;
+   width: 20%;
+   height: 30px;
+
+
+    
+}
+.formbtn{
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    border-radius: 25px;
+    padding: 5px;
+    width: 20%;
+    height: 30px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,36 @@
+{%extends 'index.html'%}
+{%block title%}
+HOME
+{%endblock%}
+{%block heading%}
+<link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+<h1>DASHBOARD</h1>
+<div class="links">
+   <div class="link">
+    <a href="{{url_for('registrations')}}">REGISTERED</a>
+    <a href="{{url_for('add_data')}}">New Registrations</a>
+    </div>
+
+    <form action="#" method="POST">
+        <lable for="date" >SEARCH IN MONTH DATA</lable>
+        <input type="month" name="date" id="date" required>
+        <input type="submit">
+    
+    </form>
+    
+</div>
+<div class="looger">
+<h1>LOGS</h1>
+<div class="LOGGER">
+    {%for line in data |reverse%}
+    <p>{{line}}</p>
+    <hr >
+    {%endfor%}
+</div>
+</div>
+{%endblock%}
+{%block content%}
+
+
+
+{%endblock%}

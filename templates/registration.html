@@ -1,0 +1,51 @@
+{% extends "index.html" %}
+{%block heading%}
+<link rel="stylesheet" href="{{url_for('static',filename='css/table.css')}}">
+
+<h1>REGISTRATION'S</h1>
+<a href="{{url_for('main')}}">HOME</a>
+
+
+{%endblock%}
+{% block content %}
+
+<form action="#" method="POST">
+    <input type="text" id="myInput" name="entered_data"  placeholder="enter here" >
+    <input type="submit">
+</form>
+<br>
+<div class='table-area'>
+<table>
+    <tr>
+        <th>S No.</th>
+        <th>E-mail</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Phone</th>
+        <th>Year</th>
+        <th>Branch</th>
+        <th>College</th>
+        <th>Domain</th>
+        <th>Joined</th>
+        <th>Done</th>
+    </tr>
+    <div class="table-data">
+    <form action="{{url_for('create')}}" method="POST" > 
+    {% for row in data %}
+    <tr>
+        {% for cell in row %}
+        <td>{{cell}}</td>
+        {% endfor %}
+        <td><input type="checkbox" name="done" value="{{row}}" ></td>
+    </tr>   
+    {% endfor %} 
+    <input type="submit" class="formbtn" value="submit">
+</form>
+    </div>
+    
+    
+    
+</table>
+</div>
+
+{% endblock %}
